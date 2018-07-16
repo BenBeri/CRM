@@ -2,21 +2,28 @@
 @section('title', 'Login')
 
 @section('content')
-    <section class="header">
-        <section class="container">
+    <div class="account-top-bar">
+        <div class="container">
+            <div class="logo">
+                <a href="javascript:void(0)" title=""><i class="fa fa-bullseye"></i> CRM</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" class="container">
+        <h1>Login into CRM</h1>
+        {!! Form::open(array('url' => 'login')) !!}
             <div class="row">
-                <div class="logo">
-                    <span>Obsidio</span>
+                <div class="feild col-md-12">
+                    <input type="text" placeholder="Username" />
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Test1</li>
-                        <li>Test2</li>
-                        <li>Test2</li>
-                    </ul>
+                <div class="feild col-md-12">
+                    <input type="password" placeholder="Password" />
+                </div>
+                <div class="feild col-md-12">
+                    {{ Form::submit('Submit!') }}
                 </div>
             </div>
-        </section>
-    </section>
+        {!! Form::close() !!}
+    </div>
 @endsection

@@ -1,29 +1,21 @@
-body {
-    background-color: #fcfbfd !important;
+#login {
+    display: block;
+    clear: both;
 }
 
-.header {
-    background-color: white;
-    border-bottom: solid 1px #efefef;
-    padding: 30px;
+#login input {
+    border: 1px solid #e6eaea;
+
+    float: left;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 13px 30px;
+    width: 100%;
 }
 
-.logo span {
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: bold;
-}
+#login h1 {
+    color: rgba(0, 0, 0, 0.5);
 
-.menu ul {
-    list-style: none;
-    padding: 10px;
-    margin-left: 20px;
-}
-
-.menu ul li {
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 15px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    color: rgba(0,0,0, 0.5)
+    margin-bottom: 20px;
 }

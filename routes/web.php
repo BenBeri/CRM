@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('login');
 });
+
+Route::post('login', array('uses' => 'Auth\\LoginController@doLogin'));
