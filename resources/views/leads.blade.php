@@ -6,20 +6,17 @@
     <header class="simple-normal">
         <div class="top-bar">
             <div class="logo">
-                <a href="index.html" title=""><i class="fa fa-bullseye"></i> Glade</a>
+                <a href="index.html" title=""><i class="fa fa-bullseye"></i> CRM</a>
             </div>
             <div class="menu-options"><span class="menu-action"><i></i></span></div>
-            <div class="search-dashboard">
-                <div class="responsive-search">
-                    <i class="fa fa-search"></i>
-                </div>
-                <form>
-                    <input type="text" placeholder="Search here" />
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div><!-- Search Dashboard -->
             <div class="top-bar-quick-sec">
                 <ul class="quick-notify-section custom-dropdowns">
+                    <li class="message-list dropdown">
+                        <span><i class="fa fa-users"></i><strong>7</strong></span>
+                    </li>
+                    <li class="message-list dropdown">
+                        <span><i class="fa fa-heart"></i><strong>7</strong></span>
+                    </li>
                     <li class="message-list dropdown">
                         <span><i class="fa fa-bell-o"></i><strong class="skyblue-bg">7</strong></span>
                         <div class="message drop-list">
@@ -41,199 +38,27 @@
                             <a href="inbox.html" title="">See All Messages</a>
                         </div><!-- Message Drop List -->
                     </li>
-                    <li class="notification-list dropdown">
-                        <span><i class="fa fa-envelope-o"></i><strong class="red-bg">12</strong></span>
-                        <div class="notification drop-list">
-                            <span>You have 3 New Notifications</span>
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)" title=""><span><i class="ti-pulse red-bg"></i></span>Server 3 is Over Loader Please Check... <h6>2 min ago..</h6></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" title=""><span><img src="http://placehold.it/40x40" alt="" /></span><i>MD Daisal</i>New User Registered<h6>4 min ago..</h6><p class="status red-bg">Urgent</p></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" title=""><span><i class="ti-crown green-bg"></i></span>Envato Has change the policies<h6>7 min ago..</h6></a>
-                                </li>
-                            </ul>
-                            <a href="javascript:void(0)" title="">See All Notifications</a>
-                        </div><!-- Notification Drop list -->
-                    </li>
-                    <li class="activity-list dropdown">
-                        <span><i class="fa fa-bug"></i><strong class="blue-bg">12</strong></span>
-                        <div class="activity drop-list">
-                            <span>Recent Activity</span>
-                            <ul>
-                                <li>
-                                    <a href="javascript:void(0)" title=""><span><img src="http://placehold.it/40x40" alt="" /></span><i>Jona Than</i>Uploading new files<h6>2 min ago..</h6><p class="status green-bg">Online</p></a>
-                                    <div class="progress">
-                                        <div style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar blue-bg">
-                                            60%
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)" title=""><span><img src="http://placehold.it/40x40" alt="" /></span><i>Bela Nisaa</i>Downloading new Documents<h6>2 min ago..</h6></a>
-                                    <div class="progress">
-                                        <div style="width: 34%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="34" role="progressbar" class="progress-bar red-bg">
-                                            34%
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <a href="javascript:void(0)" title="">See All Activity</a>
-                        </div><!-- Activity Drop list -->
-                    </li>
                 </ul>
-                <span class="open-panel"><i class="fa fa-cog fa-spin"></i></span>
-                <span id="toolFullScreen" class="full-screen-btn"><i class="fa fa-arrows-alt"></i></span>
                 <div class="name-area">
-                    <a href="javascript:void(0)" title=""><img src="http://placehold.it/100x100" alt="" /> <strong>John Doe</strong></a>
+                    <a href="javascript:void(0)" title=""><strong>{{{ Auth::user()->name }}}</strong></a>
                 </div>
             </div>
         </div><!-- Top Bar -->
         <div class="side-menu-sec" id="header-scroll">
-            <div class="quick-report-side">
-                <span>TODAY REPORT</span>
-                <ul>
-                    <li><div><strong>456</strong><span>Sales</span></div></li>
-                    <li><div><strong>115</strong><span>Orders</span></div></li>
-                    <li><div><strong>$120</strong><span>Earn</span></div></li>
-                </ul>
-            </div>
             <div class="side-menus">
-                <span>MAIN LINKS</span>
                 <nav>
                     <ul class="parent-menu">
-                        <li class="menu-item-has-children">
-                            <a title=""><i class="ti-desktop"></i><span>Dashboard <i class="badge red-bg">HOT</i></span></a>
-                            <ul>
-                                <li><a href="index.html" title="">Dashboard 1</a></li>
-                                <li><a href="index2.html" title="">Dashboard 2</a></li>
-                                <li><a href="index3.html">Dashboard 3</a></li>
-                                <li><a href="index4.html">Dashboard 4</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a title=""><i class="ti-email"></i><span>Mail Box <i class="badge blue-bg">2 Unread</i></span></a>
-                            <ul>
-                                <li><a href="inbox.html">Inbox</a></li>
-                                <li><a href="compose.html">Compose Email</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="widgets.html" title=""><i class="ti-bolt"></i><span>Widgets <i class="badge skyblue-bg">40+</i></span></a>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a title=""><i class="ti-heart"></i><span>UI Elements <i class="badge red-bg">40+</i></span></a>
-                            <ul class="mega">
-                                <li><a href="inbox.html">Inbox</a></li>
-                                <li><a href="compose.html">Compose Email</a></li>
-                                <li><a href="profile.html">My Profile</a></li>
-                                <li><a href="buttons.html">Buttons</a></li>
-                                <li><a href="timeline.html">Timeline</a></li>
-                                <li><a href="timeline2.html">Timeline 2</a></li>
-
-                                <li><a href="tabs.html">Tabs</a></li>
-                                <li><a href="syntax-highlight.html">Syntax Highlight</a></li>
-                                <li><a href="wysiwyg-editor.html">WYSIWYG Editor</a></li>
-                                <li><a href="radial-indicator.html">Radial Indicator</a></li>
-                                <li><a href="parallax.html">Parallax</a></li>
-                                <li><a href="typography.html">Typography</a></li>
-                                <li><a href="calendar.html">Calendar</a></li>
-                                <li><a href="upload-crop.html">Upload Crop</a></li>
-                                <li><a href="tour.html">Page Tour</a></li>
-                                <li><a href="collapse.html">Collapse</a></li>
-                                <li><a href="forms.html">Form Stuff</a></li>
-                                <li><a href="form-builder.html">Form Builder <i class="badge red-bg">HOT</i></a></li>
-                                <li><a href="modal-boxes.html">Modal Boxes</a></li>
-                                <li><a href="grids.html">Grids</a></li>
-                                <li><a href="notification.html">Notifications</a></li>
-                                <li><a href="price-table.html">Price Table</a></li>
-                                <li><a href="price-table2.html">Price Table 2</a></li>
-                                <li><a href="range-slider.html">Range Slider</a></li>
-                                <li><a href="sort-block.html">Sortable</a></li>
-                                <li><a href="basic-tables.html">Basic Tables</a></li>
-                                <li><a href="tabular-table.html">Tabular Tables</a></li>
-                                <li><a href="bootstrap-sortable-tables.html">Bootstrap Sortable Tables</a></li>
-                                <li><a href="task-dynamic.html">My Tasks</a></li>
-                                <li><a href="task-simple.html">Todo Lists</a></li>
-                                <li><a href="progress-bar.html">Progress Bar</a></li>
-                                <li><a href="popovers.html">Popovers</a></li>
-                                <li><a href="navbars.html">Navbars</a></li>
-                                <li><a href="calculator.html">Calculator</a></li>
-                                <li><a href="paginations.html">Paginations</a></li>
-                                <li><a href="tooltips.html">Tooltips</a></li>
-                                <li><a href="ribbon-grids.html">Ribbon Grids</a></li>
-                                <li><a href="css-spinners.html">Css Spinners</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="gallery2.html">Gallery 2</a></li>
-                                <li><a href="slider.html">Sliders</a></li>
-                                <li><a href="maintenance.html">Maintenance</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="rich-charts.html"><i class="ti-pie-chart"></i><span>Charts</span></a>
-                        </li>
                         <li class="menu-item-has-children active">
-                            <a title=""><i class="ti-pencil"></i><span>Pages</span></a>
+                            <a title=""><i class="ti-desktop"></i><span>Dashboard</span></a>
                             <ul class="mega" style="display:block">
-                                <li><a href="blank.html">Blank</a></li>
-                                <li><a href="masonry-grids.html">Masonry Grids</a></li>
-                                <li><a href="panels.html">Widget Panels</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog2.html">Blog 2</a></li>
-                                <li><a href="single-post.html">Single Post</a></li>
-                                <li><a href="404.html">404 Page</a></li>
-                                <li><a href="404-2.html">404 Page 2</a></li>
-                                <li><a href="404-3.html">404 Page 3</a></li>
-                                <li><a href="505.html">505 Page</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="google-map.html">Google Map</a></li>
-                                <li><a href="vector-map.html">Vector Map</a></li>
-                                <li><a href="invoice.html">Invoice</a></li>
-                                <li><a href="search-not-found.html">No Search Result</a></li>
-                                <li><a href="search-found.html">Search Found</a></li>
-                                <li><a href="faq.html">FAQ Page</a></li>
-                                <li><a href="coming-soon.html">Coming soon</a></li>
-                                <li><a href="our-team.html">Our Team</a></li>
-                                <li><a href="our-team2.html">Our Team 2</a></li>
-                                <li><a href="scroll-box.html">ScrollBox</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="services2.html">Services 2</a></li>
-                                <li><a href="services3.html">Services 3</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="portfolio2.html">Portfolio 2</a></li>
-                                <li><a href="portfolio-filter.html">Portfolio Filter</a></li>
-                                <li><a href="profile.html">My Profile</a></li>
+                                <li><a href="index.html" title=""><i class="ti-user"></i> Leads</a></li>
+                                <li><a href="index2.html" title=""><i class="ti-heart"></i> Customers</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a title=""><i class="ti-paint-roller"></i><span>Icons</span></a>
+                            <a title=""><i class="ti-user"></i><span>Account</span></a>
                             <ul>
-                                <li><a href="font-awesome.html">Font Awesome</a></li>
-                                <li><a href="themify-icons.html">Themify Icons</a></li>
-                                <li><a href="skycons.html">Skycons Weather Icons</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a title=""><i class="ti-rocket"></i><span>Shop <i class="badge green-bg">NEW</i></span></a>
-                            <ul>
-                                <li><a href="product.html">Product</a></li>
-                                <li><a href="product2.html">Product 2</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="single-product.html">Single Product</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="order-received.html">Order Received</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a title=""><i class="ti-rocket"></i><span>Extras</span></a>
-                            <ul>
-                                <li><a href="forgot-password.html">Forgot Password</a></li>
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="register.html">Sign up</a></li>
-                                <li><a href="lockscreen.html">Lockscreen</a></li>
+                                <li><a href="index.html" title=""><i class="ti-sign-out"></i> Sign Out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -404,27 +229,7 @@
                     <div class="col-md-3 column">
                         <div class="heading-profile">
                             <h2>Blank Page</h2>
-                            <span>Welcome back, John</span>
-                        </div>
-                    </div>
-                    <div class="col-md-9 column">
-                        <div class="top-bar-chart">
-                            <div class="bar-chart-details">
-                                <p>New User</p>
-                                <h5>17,561</h5>
-                            </div>
-                            <span id="new-orders" class="sparkline">4,5,6,7,6,5,4,3,3,4</span>
-                        </div>
-                        <div class="top-bar-chart">
-                            <div class="bar-chart-details">
-                                <p>My Balance</p>
-                                <h5>$21,561.01</h5>
-                            </div>
-                            <span id="my-balance" class="sparkline">4,3,6,3,8,6,4,3,3,4</span>
-                        </div>
-                        <div class="quick-btn-title">
-                            <a href="javascript:void(0)" title=""><i class="fa fa-plus"></i> New Tasks</a>
-                            <a href="javascript:void(0)" title=""><i class="fa fa-cloud-upload"></i> Upload Files</a>
+                            <span>Welcome back, {{{ Auth::user()->name }}}</span>
                         </div>
                     </div>
                 </div>

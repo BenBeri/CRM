@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+use Illuminate\Support\Facades\Route;
+
+Route::get('/',  array('uses' => 'HomeController@index'));
+Route::get('/login',  array('uses' => 'Auth\\LoginController@index'));
 
 Route::post('login', array('uses' => 'Auth\\LoginController@doLogin'));
