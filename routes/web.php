@@ -14,6 +14,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',  array('uses' => 'HomeController@index'));
-Route::get('/login',  array('uses' => 'Auth\\LoginController@index'));
+
+/**
+ * Authentication
+ */
+Route::get('/login',  array('uses' => 'Auth\\LoginController@index'))->name("auth.login.view");
+Route::get('/logout',  array('uses' => 'Auth\\LoginController@doLogout'))->name("auth.logout");
 
 Route::post('login', array('uses' => 'Auth\\LoginController@doLogin'));

@@ -21,8 +21,16 @@
                 </ul>
             </div>
         @endif
+
+        @if(session()->has('message.level'))
+            <div class="alert alert-{{ session('message.level') }}">
+                {!! session('message.content') !!}
+            </div>
+        @endif
+
         <h1>Login into CRM</h1>
         {!! Form::open(array('url' => 'login')) !!}
+            @csrf
             <div class="row">
                 <div class="feild col-md-12">
                     <input type="text" name="name" placeholder="Username" />

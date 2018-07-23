@@ -58,7 +58,7 @@
                         <li class="menu-item-has-children">
                             <a title=""><i class="ti-user"></i><span>Account</span></a>
                             <ul>
-                                <li><a href="index.html" title=""><i class="ti-sign-out"></i> Sign Out</a></li>
+                                <li><a href="{{{ route("auth.logout" }}}" title=""><i class="ti-sign-out"></i> Sign Out</a></li>
                             </ul>
                         </li>
                     </ul>
