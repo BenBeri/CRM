@@ -1,5 +1,5 @@
 @extends('application')
-@section('title', 'Leads')
+@section('title', 'Customers')
 
 @section('content')
     <div class="slide-panel" id="panel-scroll">
@@ -163,7 +163,7 @@
                 <div class="row">
                     <div class="col-md-3 column">
                         <div class="heading-profile">
-                            <h2>Blank Page</h2>
+                            <h2>Customers page</h2>
                             <span>Welcome back, {{{ Auth::user()->name }}}</span>
                         </div>
                     </div>

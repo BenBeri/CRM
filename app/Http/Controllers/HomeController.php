@@ -22,6 +22,14 @@ class HomeController extends Controller
     }
 
     public function index(Request $request) {
+        return $this->leads($request);
+    }
+
+    public function leads(Request $request) {
         return view('leads');
+    }
+
+    public function customers(Request $request) {
+        return view('customers');
     }
 }

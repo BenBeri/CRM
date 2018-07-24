@@ -623,6 +623,7 @@ body.modal-open header {
     float: left;
     padding-right: 19px;
     width: 100%;
+    border-bottom: solid 5px #36c6d3;
 }
 .logo {
     float: left;
@@ -877,6 +878,7 @@ body.modal-open header {
     position: fixed;
     top: 0;
     width: 266px !important;
+    color: white;
 }
 .quick-report-side {
     float: left;

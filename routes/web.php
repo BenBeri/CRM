@@ -14,11 +14,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',  array('uses' => 'HomeController@index'));
+Route::get('/leads',  array('uses' => 'HomeController@leads'));
+Route::get('/customers',  array('uses' => 'HomeController@customers'));
 
 /**
  * Authentication
  */
 Route::get('/login',  array('uses' => 'Auth\\LoginController@index'))->name("auth.login.view");
-Route::get('/logout',  array('uses' => 'Auth\\LoginController@doLogout'))->name("auth.logout");
+Route::delete('/logout',  array('uses' => 'Auth\\LoginController@logout'))->name("auth.logout");
 
-Route::post('login', array('uses' => 'Auth\\LoginController@doLogin'));
+Route::post('login', array('uses' => 'Auth\\LoginController@login'));
