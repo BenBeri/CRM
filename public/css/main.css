@@ -330,6 +330,7 @@ a{
 .custom-dropdowns .dropdown {
     float: left;
     margin-top: 11px;
+    z-index: 1000;
 }
 
 .custom-dropdowns .dropdown > a {
@@ -823,7 +824,6 @@ body.modal-open header {
 .name-area {
     float: right;
     margin-right: 30px;
-    padding: 2px 0;
 }
 .name-area > a {
     color: #94979f;

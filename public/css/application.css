@@ -21,13 +21,12 @@
 }
 
 #sign_out_button {
-    bordeR: 0;
-    background-color: darkred;
-    width: 100%;
+    border: 0;
+    background-color: #4e5267;
+    border-radius: 5px;
+    padding: 10px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
-    padding: 15px;
 }
 
 #sign_out_button:hover {
@@ -84,4 +83,8 @@
 #side-menu-nav li.active {
     background-color: #232737;
     border-left: solid 15px #36c6d3;
+}
+
+#logout-area {
+    padding: 10px;
 }

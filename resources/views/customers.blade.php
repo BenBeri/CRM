@@ -1,7 +1,9 @@
 @extends('application')
 @section('title', 'Customers')
 
+
 @section('content')
+    @include("header")
     <div class="slide-panel" id="panel-scroll">
         <ul role="tablist" class="nav nav-tabs panel-tab-btn">
             <li class="active"><a data-toggle="tab" role="tab" data-target="#panel-tab1"><i class="ti-email"></i><span>Your Emails</span></a></li>
